@@ -1,0 +1,28 @@
+{
+  "name": "Gutenberg Run",
+  "description": "Quickly run active pull request on gutenberg.run.",
+  "version": "1.0.0",
+  "author": "lubus",
+  "homepage_url": "https://github.com/lubusIN/gutenberg-run",
+  "manifest_version": 3,
+  "icons": {
+		"48": "/assets/icons/48.png",
+		"128": "/assets/icons/128.png"
+	},
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/WordPress/gutenberg/pull/*"
+      ],
+      "css": ["assets/button.css"],
+      "js": ["assets/button.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
