@@ -1,0 +1,10 @@
+.btn-gutenberg-run {
+    padding: 3px 10px !important;
+    display: flex !important;
+}
+
+.btn-gutenberg-run svg {
+    width: 14px;
+    margin-right: 2px;
+    fill: white;
+}
