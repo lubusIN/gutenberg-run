@@ -7,7 +7,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 
     const btnGutenbergRun = `
         <a 
-            class="btn btn-primary ml-2 btn-gutenberg-run" 
+            class="btn btn-primary ml-1 btn-gutenberg-run" 
             role="button" 
             data-hotkey="r" 
             href="http://gutenberg.run/${pullrequestId}" 
